@@ -1,9 +1,3 @@
-# -*- coding: utf-8 -*-
-"""
-Created on Sat Jun 26 11:45:03 2021
-
-@author: noopa
-"""
 
 
 import numpy as np
@@ -13,7 +7,7 @@ from flask import Flask, request
 from flask import Flask, request, jsonify, render_template
 
 app=Flask(__name__)
-pickle_in = open(r"\Users\Clifo\OneDrive\Documents\project\classifier.pkl","rb")
+pickle_in = open("classifier.pkl","rb")
 classifier=pickle.load(pickle_in)
 
 @app.route('/')
